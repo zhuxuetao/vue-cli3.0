@@ -1,0 +1,49 @@
+@import 'variable';
+
+body, html {
+  line-height: 1;
+  font-family: 'Microsoft YaHei', 'SimSun', 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  -webkit-tap-highlight-color: transparent;
+  background: $color_background_d;
+  color: $color-text;
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+}
+
+* { box-sizing: border-box;}
+
+html { position: relative;}
+
+// 所有输入框 placeholder 颜色
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+color: $color_text_input;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+color: $color_text_input;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+color: $color_text_input;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+color: $color_text_input;
+}
+
+input[type="radio"], select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    //position: absolute;
+    //left: -999999999px;
+  display: none;
+}
+
+input, select { outline: none; border: 0;}
+
+.slide-show-enter-active, .slide-show-leave-active { transition: all .3s ease-out;}
+.slide-show-enter, .slide-show-leave-to { transform: translateY(100%); opacity: 0;}
+
